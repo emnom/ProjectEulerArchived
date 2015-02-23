@@ -3,34 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using Common;
 namespace Problem_3
 {
     class Program
     {
         static void Main(string[] args)
         {
-            int maxPrime = 10000;
             int lastPrime = 0;
             long theNumber = 600851475143;
-            List<int> primes = new List<int>();
-            primes.Add(2);
-            for (int i = 3; i < maxPrime; i++)
-            {
-                bool isPrime = true;
-                foreach (var prime in primes)
-                {
-                    if (i % prime == 0)
-                    {
-                        isPrime = false;
-                        break;
-                    }
-                }
-                if (isPrime)
-                {
-                    primes.Add(i);
-                }
-            }
+            var primes = Prime.GetPrimes(1000);
 
             var found = false;
             while (true)
@@ -65,5 +47,7 @@ namespace Problem_3
             Console.WriteLine(lastPrime);
             Console.ReadLine();
         }
+
+
     }
 }
