@@ -1,3 +1,3 @@
 # ProjectEuler
 
-This project is in projecteuler.net's problems solutions.
+Projecteuler.net's solutions are in this project.
