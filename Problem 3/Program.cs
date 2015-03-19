@@ -12,7 +12,7 @@ namespace Problem_3
         {
             int lastPrime = 0;
             long theNumber = 600851475143;
-            var primes = Prime.GetPrimes(1000);
+            var primes = Prime.GetNumberOfPrimes(1000);
 
             var found = false;
             while (true)

@@ -11,7 +11,7 @@ namespace Problem_7
     {
         static void Main(string[] args)
         {
-            var primes = Prime.GetPrimes(10001);
+            var primes = Prime.GetNumberOfPrimes(10001);
             Console.WriteLine(primes[primes.Count - 1]);
             Console.ReadLine();
         }
